@@ -50,7 +50,7 @@ private:
   std::shared_ptr<SpanProcessor> processor_;
   mutable std::mutex mu_;
   std::unique_ptr<Recordable> recordable_;
-  opentelemetry::core::SteadyTimestamp start_steady_time;
+  opentelemetry::core::SteadyTimestamp start_steady_time_;
   std::unique_ptr<trace_api::SpanContext> span_context_;
   bool has_ended_;
 };
